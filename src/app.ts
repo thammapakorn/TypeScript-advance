@@ -38,10 +38,37 @@
 // console.log( `total = ${total(100,200)}`)
 
 // default parameter
-function showEmployee(name:string,age:number,address:string="กรุงเทพ"){
-    console.log(`ชื่อ ${name}, อายุ ${age}, ที่อยู่ ${address}`)
-}
+// function showEmployee(name:string,age:number,address:string="กรุงเทพ"){
+//     console.log(`ชื่อ ${name}, อายุ ${age}, ที่อยู่ ${address}`)
+// }
 
-showEmployee("ก้อง",30,"กรุงเทพ")
-showEmployee("เปรม",28,"กรุงเทพ")
-showEmployee("จูน",30)
+// showEmployee("ก้อง",30,"กรุงเทพ")
+// showEmployee("เปรม",28,"กรุงเทพ")
+// showEmployee("จูน",30)
+
+// object ไม่กำหนดชนิดตัวแปร
+// const person1={
+//     name: "test",
+//     age: 20
+// }
+
+// object กำหนดชนิดตัวแปร
+// const person2:{name:string,age:number}={
+//     name:"Pream",age:27
+// }
+// console.log(person2)
+
+// const position:{x:number,y:number}={
+//     x:200,
+//     y:150
+// }
+
+// Function รับค่า object
+const person1 = {
+  name: "Pream",
+  age: 20,
+};
+function showDetail(data: { name: string; age: number }) {
+  console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`);
+}
+showDetail(person1);
