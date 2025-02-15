@@ -10,7 +10,21 @@
 // }
 // sendEmail()
 // function return
-function getAddress() {
-    return "Bangkok";
+// function getAddress():string{
+//     return "Bangkok";
+// }
+// console.log(getAddress());
+// function รับและ return
+function checkNumber(num) {
+    if (num % 2 === 0) {
+        return "เลขคู่";
+    }
+    else {
+        return "เลขคี่";
+    }
 }
-console.log(getAddress());
+function total(a, b) {
+    return a + b;
+}
+console.log(total(100, 200));
+console.log(checkNumber(11));
