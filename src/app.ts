@@ -74,12 +74,31 @@
 // showDetail(person1);
 
 // Function รีเทรินค่า object
-const position : {lat:number,long:number} = {lat:10,long:20}
+// const position : {lat:number,long:number} = {lat:10,long:20}
 
-const randomPosition=():{lat:number,long:number}=>{
-    return{
-        lat:Math.random(),
-        long:Math.random()
-    }
+// const randomPosition=():{lat:number,long:number}=>{
+//     return{
+//         lat:Math.random(),
+//         long:Math.random()
+//     }
+// }
+// console.log(randomPosition())
+
+//Excess Properties Check
+const showDetail=(data:{name:string,age:number})=>{
+    console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`)
 }
-console.log(randomPosition())
+
+const person={
+    name:"pream",
+    age:27,
+    address:"Bangkok" //properties เยอะกว่าที่รับใน function showDetail
+}
+showDetail(person)
+
+
+showDetail({
+    name:"pream",
+    age:27,
+    address:"Bangkok" //properties เยอะกว่าที่รับใน function showDetail
+})
