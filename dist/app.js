@@ -32,3 +32,10 @@
 //     return a+b;
 // }
 // console.log( `total = ${total(100,200)}`)
+// default parameter
+function showEmployee(name, age, address = "กรุงเทพ") {
+    console.log(`ชื่อ ${name}, อายุ ${age}, ที่อยู่ ${address}`);
+}
+showEmployee("ก้อง", 30, "กรุงเทพ");
+showEmployee("เปรม", 28, "กรุงเทพ");
+showEmployee("จูน", 30);
