@@ -5,7 +5,12 @@
 // }
 // test()
 // function (parameter)
-function sendEmail(name = "test@gmail.com") {
-    console.log(name);
+// function sendEmail(name:string ="test@gmail.com"){
+//     console.log(name)
+// }
+// sendEmail()
+// function return
+function getAddress() {
+    return "Bangkok";
 }
-sendEmail();
+console.log(getAddress());
