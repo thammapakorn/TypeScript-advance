@@ -64,11 +64,22 @@
 // }
 
 // Function รับค่า object
-const person1 = {
-  name: "Pream",
-  age: 20,
-};
-function showDetail(data: { name: string; age: number }) {
-  console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`);
+// const person1 = {
+//   name: "Pream",
+//   age: 20,
+// };
+// const showDetail=(data: { name: string; age: number })=> {
+//   console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`);
+// }
+// showDetail(person1);
+
+// Function รีเทรินค่า object
+const position : {lat:number,long:number} = {lat:10,long:20}
+
+const randomPosition=():{lat:number,long:number}=>{
+    return{
+        lat:Math.random(),
+        long:Math.random()
+    }
 }
-showDetail(person1);
+console.log(randomPosition())
