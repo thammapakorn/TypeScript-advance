@@ -123,22 +123,22 @@
 // console.log(emp1)
 
 // type aliases (optional)
-type Employee = {
-    id:number,
-    name:string,
-    salary:number,
-    phone?:string
-}
-let emp1:Employee ={
-    id:1,
-    name:"Pream",
-    salary:27000
-}
-let emp2:Employee ={
-    id:2,
-    name:"June",
-    salary:60000,
-    phone:"0565555555"
-}
+// type Employee = {
+//     id:number,
+//     name:string,
+//     salary:number,
+//     phone?:string
+// }
+// let emp1:Employee ={
+//     id:1,
+//     name:"Pream",
+//     salary:27000
+// }
+// let emp2:Employee ={
+//     id:2,
+//     name:"June",
+//     salary:60000,
+//     phone:"0565555555"
+// }
 
-console.log(emp1)
+// console.log(emp1)
