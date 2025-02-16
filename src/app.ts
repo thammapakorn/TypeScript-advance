@@ -85,20 +85,39 @@
 // console.log(randomPosition())
 
 //Excess Properties Check
-const showDetail=(data:{name:string,age:number})=>{
-    console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`)
+// const showDetail=(data:{name:string,age:number})=>{
+//     console.log(`ชื่อ = ${data.name}, อายุ = ${data.age}`)
+// }
+
+// const person={
+//     name:"pream",
+//     age:27,
+//     address:"Bangkok" //properties เยอะกว่าที่รับใน function showDetail
+// }
+// showDetail(person)
+
+
+// showDetail({
+//     name:"pream",
+//     age:27,
+//     address:"Bangkok"
+// })
+
+// type aliases
+type Employee = {
+    id:number,
+    name:string,
+    salary:number,
+    phone:string
 }
-
-const person={
-    name:"pream",
-    age:27,
-    address:"Bangkok" //properties เยอะกว่าที่รับใน function showDetail
+let emp1:Employee ={
+    id:1,
+    name:"Pream",
+    salary:27000,
+    phone:"0633333333"
 }
-showDetail(person)
-
-
-showDetail({
-    name:"pream",
-    age:27,
-    address:"Bangkok" //properties เยอะกว่าที่รับใน function showDetail
-})
+emp1.id = 4
+emp1.name = "June"
+emp1.salary = 60000
+emp1.phone = "0332221111"
+console.log(emp1)
