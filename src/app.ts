@@ -104,20 +104,41 @@
 // })
 
 // type aliases
+// type Employee = {
+//     id:number,
+//     name:string,
+//     salary:number,
+//     phone:string
+// }
+// let emp1:Employee ={
+//     id:1,
+//     name:"Pream",
+//     salary:27000,
+//     phone:"0633333333"
+// }
+// emp1.id = 4
+// emp1.name = "June"
+// emp1.salary = 60000
+// emp1.phone = "0332221111"
+// console.log(emp1)
+
+// type aliases (optional)
 type Employee = {
     id:number,
     name:string,
     salary:number,
-    phone:string
+    phone?:string
 }
 let emp1:Employee ={
     id:1,
     name:"Pream",
-    salary:27000,
-    phone:"0633333333"
+    salary:27000
 }
-emp1.id = 4
-emp1.name = "June"
-emp1.salary = 60000
-emp1.phone = "0332221111"
+let emp2:Employee ={
+    id:2,
+    name:"June",
+    salary:60000,
+    phone:"0565555555"
+}
+
 console.log(emp1)
