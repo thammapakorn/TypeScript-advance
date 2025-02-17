@@ -167,11 +167,16 @@
 // console.log(ages)
 
 // Array เข้าถึงสมาชิกใน Array โดยใช้ for loop
+// const ages:number[]=[25,30,35]
+// for(let i = 0; i < ages.length; i++){
+//     console.log(ages[i])
+// }
+// // Array เข้าถึงสมาชิกใน Array โดยใช้ forEach
+// ages.forEach(element=>{
+//     console.log(`forEach ${element}`)
+// })
+
+//Array เข้าถึงสมาชิกใน Array เปลี่ยนค่าภายใน Array
 const ages:number[]=[25,30,35]
-for(let i = 0; i < ages.length; i++){
-    console.log(ages[i])
-}
-// Array เข้าถึงสมาชิกใน Array โดยใช้ forEach
-ages.forEach(element=>{
-    console.log(`forEach ${element}`)
-})
+ages[0] = 10
+console.log(`เปลี่ยนค่าจาก 25 เป็น ${ages[0]}`)
