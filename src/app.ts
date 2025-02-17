@@ -144,18 +144,25 @@
 // console.log(emp1)
 
 // type aliases (read only)
-type Employee = {
-   readonly id:number,
-    name:string,
-    salary:number,
-    phone?:string
-}
-let emp1:Employee ={
-    id:1,
-    name:"Pream",
-    salary:27000
-}
-emp1.id = 599;
-emp1.salary = 100000
+// type Employee = {
+//    readonly id:number,
+//     name:string,
+//     salary:number,
+//     phone?:string
+// }
+// let emp1:Employee ={
+//     id:1,
+//     name:"Pream",
+//     salary:27000
+// }
+// emp1.id = 599;
+// emp1.salary = 100000
 
-console.log(emp1)
+// console.log(emp1)
+
+// Array ไม่กำหนดค่าเริ่มต้น เพิ่มค่าโดยใช้ push
+const users:string[]=[]
+users.push("Pream")
+users.push("June")
+users.push(100) // จะเห็นว่าถ้าใส่ตัวเลขเข้าไปจะเกิด error
+console.log(users)
