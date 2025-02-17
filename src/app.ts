@@ -160,9 +160,8 @@
 
 // console.log(emp1)
 
-// Array ไม่กำหนดค่าเริ่มต้น เพิ่มค่าโดยใช้ push
-const users:string[]=[]
-users.push("Pream")
-users.push("June")
-users.push(100) // จะเห็นว่าถ้าใส่ตัวเลขเข้าไปจะเกิด error
-console.log(users)
+// Array กำหนดค่าเริ่มต้น เพิ่มค่าโดยใช้ push
+const ages:number[]=[25,30,35]
+ages.push(40)
+ages.push(50)
+console.log(ages)
