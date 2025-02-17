@@ -176,7 +176,21 @@
 //     console.log(`forEach ${element}`)
 // })
 
-//Array เข้าถึงสมาชิกใน Array เปลี่ยนค่าภายใน Array
-const ages:number[]=[25,30,35]
-ages[0] = 10
-console.log(`เปลี่ยนค่าจาก 25 เป็น ${ages[0]}`)
+// Array เข้าถึงสมาชิกใน Array เปลี่ยนค่าภายใน Array
+// const ages:number[]=[25,30,35]
+// ages[0] = 10
+// console.log(`เปลี่ยนค่าจาก 25 เป็น ${ages[0]}`)
+
+// Array ใช้กับ Type Aliases
+type Employee={
+    name:string,
+    salary:number,
+    department?:string
+}
+const employees:Employee[]=[]
+employees.push({name:"Pream",salary:30000,department:"IT Dev"})
+employees.push({name:"June",salary:60000,department:"Sales"})
+employees.push({name:"Joke",salary:60000})
+console.log(employees)
+
+console.log(employees[0])
