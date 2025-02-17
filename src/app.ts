@@ -161,7 +161,17 @@
 // console.log(emp1)
 
 // Array กำหนดค่าเริ่มต้น เพิ่มค่าโดยใช้ push
+// const ages:number[]=[25,30,35]
+// ages.push(40)
+// ages.push(50)
+// console.log(ages)
+
+// Array เข้าถึงสมาชิกใน Array โดยใช้ for loop
 const ages:number[]=[25,30,35]
-ages.push(40)
-ages.push(50)
-console.log(ages)
+for(let i = 0; i < ages.length; i++){
+    console.log(ages[i])
+}
+// Array เข้าถึงสมาชิกใน Array โดยใช้ forEach
+ages.forEach(element=>{
+    console.log(`forEach ${element}`)
+})
