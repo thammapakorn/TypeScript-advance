@@ -4,9 +4,14 @@
 //    return console.log("Hello TS")
 // }
 // test()
-const employees = [];
-employees.push({ name: "Pream", salary: 30000, department: "IT Dev" });
-employees.push({ name: "June", salary: 60000, department: "Sales" });
-employees.push({ name: "Joke", salary: 60000 });
-console.log(employees);
-console.log(employees[0]);
+function total(a, b, c) {
+    if (typeof a == "number" && typeof b == "number" && typeof c == "number") {
+        return a + b + c;
+    }
+    if (typeof a == "string" && typeof b == "string" && typeof c == "string") {
+        return parseInt(a) + parseInt(b) + parseInt(c);
+    }
+    throw new Error("ชนิดข้อมูลไม่ถูกต้อง");
+}
+console.log(total(100, 100, 100));
+console.log(total("200", "100", "100"));

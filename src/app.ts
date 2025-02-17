@@ -96,7 +96,6 @@
 // }
 // showDetail(person)
 
-
 // showDetail({
 //     name:"pream",
 //     age:27,
@@ -182,15 +181,45 @@
 // console.log(`เปลี่ยนค่าจาก 25 เป็น ${ages[0]}`)
 
 // Array ใช้กับ Type Aliases
-type Employee={
-    name:string,
-    salary:number,
-    department?:string
-}
-const employees:Employee[]=[]
-employees.push({name:"Pream",salary:30000,department:"IT Dev"})
-employees.push({name:"June",salary:60000,department:"Sales"})
-employees.push({name:"Joke",salary:60000})
-console.log(employees)
+// type Employee={
+//     name:string,
+//     salary:number,
+//     department?:string
+// }
+// const employees:Employee[]=[]
+// employees.push({name:"Pream",salary:30000,department:"IT Dev"})
+// employees.push({name:"June",salary:60000,department:"Sales"})
+// employees.push({name:"Joke",salary:60000})
+// console.log(employees)
 
-console.log(employees[0])
+// console.log(employees[0])
+
+// Function Overloading
+// function sayHi():string
+// function sayHi(name:string):string
+// function sayHi(name?:unknown):unknown{
+//     if(!name){
+//         return `Hello TypeScript`
+//     }
+//     if(typeof name == "string"){
+//         return `Hello ${name}`
+//     }
+//     throw new Error("ชนิดข้อมูลไม่ถูกต้อง")
+// }
+
+// console.log(sayHi())
+// console.log(sayHi("Hello"))
+
+function total(a: number, b: number, c: number): number;
+function total(a: string, b: string, c: string): string;
+function total(a: unknown, b: unknown, c: unknown): unknown {
+  if (typeof a == "number" && typeof b == "number" && typeof c == "number") {
+    return a + b + c;
+  }
+  if (typeof a == "string" && typeof b == "string" && typeof c == "string") {
+    return parseInt(a) + parseInt(b) + parseInt(c);
+  }
+  throw new Error("ชนิดข้อมูลไม่ถูกต้อง")
+}
+console.log(total(100,100,100));
+console.log(total("200","100","100"));
