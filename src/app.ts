@@ -210,16 +210,22 @@
 // console.log(sayHi())
 // console.log(sayHi("Hello"))
 
-function total(a: number, b: number, c: number): number;
-function total(a: string, b: string, c: string): string;
-function total(a: unknown, b: unknown, c: unknown): unknown {
-  if (typeof a == "number" && typeof b == "number" && typeof c == "number") {
-    return a + b + c;
-  }
-  if (typeof a == "string" && typeof b == "string" && typeof c == "string") {
-    return parseInt(a) + parseInt(b) + parseInt(c);
-  }
-  throw new Error("ชนิดข้อมูลไม่ถูกต้อง")
-}
-console.log(total(100,100,100));
-console.log(total("200","100","100"));
+// function total(a: number, b: number, c: number): number;
+// function total(a: string, b: string, c: string): string;
+// function total(a: unknown, b: unknown, c: unknown): unknown {
+//   if (typeof a == "number" && typeof b == "number" && typeof c == "number") {
+//     return a + b + c;
+//   }
+//   if (typeof a == "string" && typeof b == "string" && typeof c == "string") {
+//     return parseInt(a) + parseInt(b) + parseInt(c);
+//   }
+//   throw new Error("ชนิดข้อมูลไม่ถูกต้อง")
+// }
+// console.log(total(100,100,100));
+// console.log(total("200","100","100")); 
+
+// Spread Operator
+const section:string[] = ["การเงิน","บัญชี"]
+const departments:string[] = ["โปรแกรมเมอร์","การตลาด","กราฟฟิก"]
+departments.push(...section) //... spread operator
+console.log(departments)
