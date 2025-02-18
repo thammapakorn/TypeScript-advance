@@ -242,21 +242,33 @@
 // console.log(total(100,200,300,400))
 
 // Destructuring Array
-const colors:string[]=["แดง","เขียว","น้ำเงิน"]
-const [red,green,blue] = colors; //Destructuring
-// const red:string = colors[0]
-// const green:string = colors[1]
-// const blue:string = colors[2]
-console.log(red)
-console.log(green)
-console.log(blue)
-// Destructuring Object
-const person={
-  fname:"pream",
-  age:27,
-  address:"Bangkok"
-}
-const{fname,age,address} = person
-console.log(fname)
-console.log(age)
-console.log(address)
+// const colors:string[]=["แดง","เขียว","น้ำเงิน"]
+// const [red,green,blue] = colors; //Destructuring
+// // const red:string = colors[0]
+// // const green:string = colors[1]
+// // const blue:string = colors[2]
+// console.log(red)
+// console.log(green)
+// console.log(blue)
+// // Destructuring Object
+// const person={
+//   fname:"pream",
+//   age:27,
+//   address:"Bangkok"
+// }
+// const{fname,age,address} = person
+// console.log(fname)
+// console.log(age)
+// console.log(address)
+
+//Tuple
+// const point:[number,number] = [5,10]
+// point[0] = 100 //เปลี่ยนค่าเริ่มต้นตัวแรก
+// const statusCode:[number,string] = [404,"error not found"]
+
+
+// console.log(point) //ดูสมาชิกทั้งหมด
+// console.log(point[0]) //ดูสมาชิกตัวแรก
+// console.log(statusCode)
+
+//Tuple Label
