@@ -231,12 +231,32 @@
 // console.log(departments)
 
 // Rest Parameter
-const total=(...numbers:number[])=>{
-  return numbers.reduce((result,value)=>{
-    return result+value;
-  },0) //result = 0 + กับค่าที่ส่งเข้ามา
-}
+// const total=(...numbers:number[])=>{
+//   return numbers.reduce((result,value)=>{
+//     return result+value;
+//   },0) //result = 0 + กับค่าที่ส่งเข้ามา
+// }
 
-console.log(total(100,200))
-console.log(total(100,200,300))
-console.log(total(100,200,300,400))
+// console.log(total(100,200))
+// console.log(total(100,200,300))
+// console.log(total(100,200,300,400))
+
+// Destructuring Array
+const colors:string[]=["แดง","เขียว","น้ำเงิน"]
+const [red,green,blue] = colors; //Destructuring
+// const red:string = colors[0]
+// const green:string = colors[1]
+// const blue:string = colors[2]
+console.log(red)
+console.log(green)
+console.log(blue)
+// Destructuring Object
+const person={
+  fname:"pream",
+  age:27,
+  address:"Bangkok"
+}
+const{fname,age,address} = person
+console.log(fname)
+console.log(age)
+console.log(address)
