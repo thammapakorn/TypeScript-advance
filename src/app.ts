@@ -271,9 +271,17 @@
 // console.log(point[0]) //ดูสมาชิกตัวแรก
 // console.log(statusCode)
 
-//Tuple Label
-const goodStatus:[code:number,status:string] = [200,"OK"]
-const notFound:[code:number,status:string] = [404,"Not Found"]
-const badRequest:[code:number,status:string] = [400,"Bad request"]
-const serverError:[code:number,status:string] = [500,"Internal Server Error"]
+//Tuple Label 
+// const goodStatus:[code:number,status:string] = [200,"OK"]
+// const notFound:[code:number,status:string] = [404,"Not Found"]
+// const badRequest:[code:number,status:string] = [400,"Bad request"]
+// const serverError:[code:number,status:string] = [500,"Internal Server Error"]
+// console.log(goodStatus)
+
+//Type Tuple
+type HttpStatusCode=[code:number,status:string]
+const goodStatus:HttpStatusCode = [200,"OK"] //ใช้งาน HttpStatusCode
+const notFound:HttpStatusCode = [404,"Not Found"]
+const badRequest:HttpStatusCode = [400,"Bad request"]
+const serverError:HttpStatusCode = [500,"Internal Server Error"]
 console.log(goodStatus)
