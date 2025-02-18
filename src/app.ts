@@ -272,3 +272,8 @@
 // console.log(statusCode)
 
 //Tuple Label
+const goodStatus:[code:number,status:string] = [200,"OK"]
+const notFound:[code:number,status:string] = [404,"Not Found"]
+const badRequest:[code:number,status:string] = [400,"Bad request"]
+const serverError:[code:number,status:string] = [500,"Internal Server Error"]
+console.log(goodStatus)

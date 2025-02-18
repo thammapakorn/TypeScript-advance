@@ -236,3 +236,8 @@
 // console.log(point[0]) //ดูสมาชิกตัวแรก
 // console.log(statusCode)
 //Tuple Label
+const goodStatus = [200, "OK"];
+const notFound = [404, "Not Found"];
+const badRequest = [400, "Bad request"];
+const serverError = [500, "Internal Server Error"];
+console.log(goodStatus);
