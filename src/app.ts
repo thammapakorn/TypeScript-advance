@@ -225,7 +225,18 @@
 // console.log(total("200","100","100")); 
 
 // Spread Operator
-const section:string[] = ["การเงิน","บัญชี"]
-const departments:string[] = ["โปรแกรมเมอร์","การตลาด","กราฟฟิก"]
-departments.push(...section) //... spread operator
-console.log(departments)
+// const section:string[] = ["การเงิน","บัญชี"]
+// const departments:string[] = ["โปรแกรมเมอร์","การตลาด","กราฟฟิก"]
+// departments.push(...section) //... spread operator
+// console.log(departments)
+
+// Rest Parameter
+const total=(...numbers:number[])=>{
+  return numbers.reduce((result,value)=>{
+    return result+value;
+  },0) //result = 0 + กับค่าที่ส่งเข้ามา
+}
+
+console.log(total(100,200))
+console.log(total(100,200,300))
+console.log(total(100,200,300,400))
